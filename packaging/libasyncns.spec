@@ -6,6 +6,7 @@ Summary:        A C library for executing name service queries asynchronously
 URL:            http://0pointer.de/lennart/projects/libasyncns
 Group:          System/Libraries
 Source:         %{name}-%{version}.tar.gz
+Source1001: 	libasyncns.manifest
 
 %description
 Libasyncns is a C library for executing name service queries
@@ -25,6 +26,7 @@ and libresolv.
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 %configure
@@ -43,9 +45,11 @@ rm -rf %{buildroot}%{_datadir}/doc
 
 
 %files
+%manifest %{name}.manifest
 %{_libdir}/libasyncns.so.*
 
 %files devel
+%manifest %{name}.manifest
 %{_includedir}/asyncns.h
 %{_libdir}/libasyncns.so
 %{_libdir}/pkgconfig/libasyncns.pc
