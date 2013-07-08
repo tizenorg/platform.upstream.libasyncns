@@ -1,0 +1,8 @@
+Change-Id: I383115e0a8ad9456e9a1f08e6fb1b9d33740b055
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:39:59 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4833
+Project: platform/upstream/libasyncns
+Branch: refs/heads/tizen
